@@ -13,6 +13,7 @@ import com.dev5151.acmchallenge2.R;
 public class MainActivity extends AppCompatActivity {
 
     Button exampleButton;
+    Button dhaneshActivityButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +29,19 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+        dhaneshActivityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,DhaneshActivityWrite.class));
+                finish();
+            }
+        });
+
     }
 
     private void initViews() {
         exampleButton = findViewById(R.id.btn_example);
+        dhaneshActivityButton=findViewById(R.id.dhanesh_activity_button);
     }
 
 }
