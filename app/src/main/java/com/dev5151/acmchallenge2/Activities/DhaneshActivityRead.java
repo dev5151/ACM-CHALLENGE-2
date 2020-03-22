@@ -17,8 +17,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 public class DhaneshActivityRead extends AppCompatActivity {
-    FirebaseDatabase mdatabase = FirebaseDatabase.getInstance();
-    DatabaseReference databaseReference = mdatabase.getReference().child("User Details");
+    FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
+    DatabaseReference databaseReference = mDatabase.getReference().child("User Details");
     ChildEventListener mChildEventListener;
     DhaneshAdapter mDhaneshAdapter;
     ArrayList<UserInfo> infoArrayList = new ArrayList<>();
@@ -40,26 +40,17 @@ public class DhaneshActivityRead extends AppCompatActivity {
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
             }
-
             @Override
             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
             }
-
             @Override
             public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
             }
         };
         databaseReference.addChildEventListener(mChildEventListener);
-
-
     }
 }
