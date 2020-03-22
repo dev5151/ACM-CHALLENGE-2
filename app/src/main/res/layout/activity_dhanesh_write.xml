@@ -4,133 +4,158 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background"
-    tools:context=".Activities.DhaneshActivityWrite" >
+    android:orientation="vertical"
+    tools:context=".Activities.DhaneshActivityWrite">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/linear"
         android:paddingTop="80dp"
-        android:paddingBottom="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DETAILS FORM"
-            android:textSize="30sp"
             android:gravity="center_horizontal"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:text="DETAILS FORM"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextBox"
             android:hint="Name">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/name"
-                android:inputType="textPersonName"
-                android:layout_height="match_parent">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextBox"
             android:hint="Username">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/username"
-                android:inputType="text"
-                android:layout_height="match_parent">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextBox"
             android:hint="Email ID">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/email"
-                android:inputType="textEmailAddress"
-                android:layout_height="match_parent">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextBox"
             android:hint="Age">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/age"
-                android:inputType="number"
-                android:layout_height="match_parent">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextBox"
             android:hint="College Name">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/collegename"
-                android:inputType="textPersonName"
-                android:layout_height="match_parent">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextBox"
             android:hint="Branch">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/branch"
-                android:inputType="text"
-                android:layout_height="match_parent">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextBox"
             android:hint="Reg.No">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/regno"
-                android:inputType="textPersonName"
-                android:layout_height="match_parent">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextBox"
             android:hint="Phone No.">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/phone"
-                android:inputType="phone"
-                android:layout_height="match_parent">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit_button"
             android:layout_width="300dp"
-            android:layout_margin="50dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
             android:gravity="center"
-            app:backgroundTint="@color/colorPrimaryDark"
             android:text="SUBMIT"
-            android:textSize="20sp"
             android:textColor="#ffffff"
-            app:cornerRadius="20dp"/>
+            android:textSize="20sp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/see_entries"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="SEE ENTRIES"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:cornerRadius="20dp" />
 
 
     </LinearLayout>
-
 
 
 </ScrollView>
